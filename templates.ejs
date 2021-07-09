@@ -1,7 +1,7 @@
-<@- include('include/_css_header.ejs',{data:{title:"我的收入明细", css:"act_rush_my_income.css"}}); @>
+<@- include('include/_css_header.ejs',{data:{title: <%= title %>, css:"<%= name %>.css"}}); @>
 <body >
-    <div id="my-income" class="scroller-container" v-cloak>
-      <%= content %>
+    <div id="app" class="<%= name %>" v-cloak>
+      <!-- to do -->
     </div>
 </body>
-<@- include('include/_footer.ejs',{data:{main:"js/activities-component/rush/my_income.js"}}); @>
+<@- include('include/_footer.ejs',{data:{main:"js/activities-component/<% = name %>.js"}}); @>
