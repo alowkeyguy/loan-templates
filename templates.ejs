@@ -1,7 +1,7 @@
-<@- include('include/_css_header.ejs',{data:{title: <%= title %>, css:"<%= name %>.css"}}); @>
+<@- include('include/_css_header.ejs',{data:{title: <%= title %>, css:"<%= fileName %>.css"}}); @>
 <body >
-    <div id="app" class="<%= name %>" v-cloak>
+    <div id="app" class="<%= fileName %>" v-cloak>
       <!-- to do -->
     </div>
 </body>
-<@- include('include/_footer.ejs',{data:{main:"js/activities-component/<% = name %>.js"}}); @>
+<@- include('include/_footer.ejs',{data:{main:"js/activities-component/<% = fileName %>.js"}}); @>
