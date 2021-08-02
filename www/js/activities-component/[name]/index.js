@@ -1,11 +1,9 @@
 // babel
 
 define([
-  'C',
-  'vue',
-  'js/common/request',
-  // 'js/activities-component/components/navbar',
-  // 'js/components/ui/Modal',
+  <@ for (var i = 0; i < requireJs.length; i++) { @>
+    "<%= requireJs[i] %>"
+  <@ } @>
 ], function (C, Vue, Request, NavBar, Modal) {
   'use strict'
 
