@@ -2,12 +2,11 @@
   'include/_css_header.ejs',
   {
     data: {
-      title: "<%= title %>"",
+      title: "<%= title %>",
       css: [
-        <% for (var i = 0; i < css.length; i++) { %>
-          <% console.log(i) %>
-          "<%= css[i] %>"
-        <% } %>
+        <%_ for (var i = 0; i < dependenciesCss.length; i++) { _%>
+        "<%= dependenciesCss[i] %>",
+        <%_ } _%>
       ]
     }
   }

@@ -1,10 +1,13 @@
 // babel
 
 define([
-  <@ for (var i = 0; i < requireJs.length; i++) { @>
-    "<%= requireJs[i] %>"
-  <@ } @>
-], function (C, Vue, Request, NavBar, Modal) {
+  'C',
+  'vue',
+  'js/common/request',
+  <%_ for (var i=0; i<dependenciesJs.length; i++){ _%>
+  '<%= dependenciesJs[i] %>',
+  <%_ } _%>
+], function (C, Vue, Request <%_ for (var i=0;i<cbArg.length;i++){%>,'<%= cbArg[i] %>'<% } %>) {
   'use strict'
 
   return new Vue({
