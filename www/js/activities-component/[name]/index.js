@@ -7,7 +7,7 @@ define([
   <%_ for (var i=0; i<dependenciesJs.length; i++){ _%>
   '<%= dependenciesJs[i] %>',
   <%_ } _%>
-], function (C, Vue, Request <%_ for (var i=0;i<cbArg.length;i++){%>,<%= cbArg[i] %><% } %>) {
+], function (C, Vue, Request <%_ for (var i=0;i<cbArg.length;i++){%>,<%= cbArg[i] %> <% } %>) {
   'use strict'
 
   return new Vue({
